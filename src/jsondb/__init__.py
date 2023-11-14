@@ -26,6 +26,9 @@ class _Object:
     def __contains__(self, key):
         return key in self.data
 
+    def keys(self):
+        return self.data.keys()
+
     def path(self) :
         return Path(self.file)
 
