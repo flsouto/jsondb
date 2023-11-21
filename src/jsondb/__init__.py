@@ -29,6 +29,9 @@ class _Object:
     def keys(self):
         return self.data.keys()
 
+    def len():
+        return len(self.data.keys())
+
     def path(self) :
         return Path(self.file)
 
