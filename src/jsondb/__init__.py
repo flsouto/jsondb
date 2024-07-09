@@ -35,10 +35,10 @@ class _Object:
     def path(self) :
         return Path(self.file)
 
-    def save(self, force=False):
+    def save(self, force=False, indent=1):
         if not self.dirty and not force:
             pass
         with open(self.file, "w") as f:
-            json.dump(self.data, f)
+            json.dump(self.data, f, indent=indent)
         self.dirty = False
 
